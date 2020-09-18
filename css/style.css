@@ -1,0 +1,31 @@
+body{
+	/*background-image: linear-gradient(to bottom right,pink,red);*/
+	 background-color: #F75050;
+}
+#parent{
+	background-color: white;
+	margin:5%;
+	display: flex;
+	justify-content: space-around;
+	border-radius: 5%;
+	height: 80%;
+
+}
+.child{
+	background-color: #F3CFC3;
+	margin:5%;
+	text-align: center;
+	padding:2%;
+	border-radius: 5%;
+	box-shadow: 4px 4px 4px 4px red;
+}
+.child>img{
+	height: 40%;
+	width: 40%;
+	margin: 4%;
+}
+.child:hover{
+	box-shadow: 4px 4px 4px 4px black;
+	color: white;
+	background-color: #F75050;
+}
