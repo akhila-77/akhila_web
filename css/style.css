@@ -1,3 +1,4 @@
+/*desktop view style*/
 body{
 	/*background-image: linear-gradient(to bottom right,pink,red);*/
 	 background-color: #F75050;
@@ -13,11 +14,12 @@ body{
 }
 .child{
 	background-color: #F3CFC3;
-	margin:5%;
+	margin:4%;
 	text-align: center;
 	padding:2%;
 	border-radius: 5%;
 	box-shadow: 4px 4px 4px 4px red;
+	width: 25%;
 }
 .child>img{
 	height: 40%;
@@ -28,4 +30,34 @@ body{
 	box-shadow: 4px 4px 4px 4px black;
 	color: white;
 	background-color: #F75050;
+}
+/*mobile view style*/
+@media screen and (min-width: 320px) and (max-width: 480px){
+#parent{
+	display: inline-block;
+	margin: 2%;
+}
+.child{
+	width: 90%;
+	margin: 2%;
+}
+p{
+	font-size: 25px;
+}
+}
+/*tab view styles*/
+@media screen and (min-width: 481px) and (max-width: 720px){
+#parent{
+	flex-wrap: wrap;
+	margin: 2%;
+}
+.child>img{
+	height: 30%;
+	width: 40%;
+	margin: 2%;
+}
+.child{
+	width: 42%;
+	margin: 2%;
+}
 }
