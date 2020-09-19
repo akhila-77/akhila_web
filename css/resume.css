@@ -1,3 +1,7 @@
+.sec{
+	display: flex;
+	flex-direction: row;
+}
 #resumeb{
 	background-color: white;
 	display: flex;
@@ -7,13 +11,14 @@
 	justify-content: space-around;
 	width: 25%;
 	flex-wrap: wrap;
+	
 }
 #profile>img{
 	height: 45%;
 	width: 60%;
 	margin: 15%;
 }
-#profile>h1,h2{
+#profile>h1,h2,h3{
 	text-align: center;
 }
 #profile>a{
@@ -49,3 +54,24 @@ th{
 	font-weight: bold;
 }
 
+
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+#main{
+	display: inline-flex;
+	flex-direction: column;
+	margin:1% 10% 5% 10%;
+	font-size: 30px;
+}
+#mainsection{
+	display: flex;
+	flex-direction: column;
+}
+.sec{
+	display: flex;
+	flex-direction: column;
+}
+#profile,h1,h2{
+	text-align: center;
+}
+}
