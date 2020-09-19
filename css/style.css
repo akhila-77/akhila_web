@@ -4,7 +4,7 @@ body{
 	 background-color: #F75050;
 }
 #parent{
-	background-color: white;
+	background-color:#F75050;
 	margin:5%;
 	display: flex;
 	justify-content: space-around;
@@ -38,22 +38,22 @@ body{
 	margin: 2%;
 }
 .child{
-	width: 90%;
-	margin: 2%;
+	width: 95%;
+	margin: 1%;
 }
 p{
 	font-size: 25px;
 }
 }
 /*tab view styles*/
-@media screen and (min-width: 481px) and (max-width: 720px){
+@media screen and (min-width: 481px) and (max-width: 768px){
 #parent{
 	flex-wrap: wrap;
-	margin: 2%;
+	margin: 3%;
 }
 .child>img{
 	height: 30%;
-	width: 40%;
+	width: 30%;
 	margin: 2%;
 }
 .child{
@@ -61,3 +61,4 @@ p{
 	margin: 2%;
 }
 }
+
