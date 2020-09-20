@@ -11,7 +11,12 @@
 	justify-content: space-around;
 	width: 25%;
 	flex-wrap: wrap;
-	
+	border-style: solid;
+	border-color: black;	
+}
+#mainsection{
+	border-style: solid;
+	border-color: black;
 }
 #profile>img{
 	height: 45%;
@@ -25,7 +30,7 @@
 	margin: 9%;
 }
 .font{
-	font-size: 20px;
+	font-size: 10px;
 }
 table{
   font-family: arial, sans-serif;
@@ -53,25 +58,42 @@ th{
 	padding-top: 4px;
 	font-weight: bold;
 }
-
-
+.headings{
+	text-align: center;
+	font-size: 30px;
+}
 
 @media screen and (min-width: 320px) and (max-width: 480px){
 #main{
 	display: inline-flex;
 	flex-direction: column;
-	margin:1% 10% 5% 10%;
+	margin:1% 20% 5% 20%;
 	font-size: 30px;
+	border-style: none;
 }
 #mainsection{
 	display: flex;
 	flex-direction: column;
+	border-style: none;
+	/*width: 50%;*/
 }
 .sec{
 	display: flex;
 	flex-direction: column;
+	border-style: none;
 }
 #profile,h1,h2{
 	text-align: center;
+	font-size: 15px;
+}
+#resumer,h1{
+	font-size: 10px;
+}
+#profile,img{
+	height: 100%;
+	width: 250%;
+}
+.headings{
+	font-size: 20px;
 }
 }
