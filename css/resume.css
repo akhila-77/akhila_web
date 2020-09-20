@@ -22,6 +22,11 @@
 	height: 45%;
 	width: 60%;
 	margin: 15%;
+	border-radius: 20%;
+	box-shadow: 3px 3px 3px 3px black;	
+}
+#profile>img:hover{
+	box-shadow: 3px 3px 3px 3px red;	
 }
 #profile>h1,h2,h3{
 	text-align: center;
@@ -32,6 +37,7 @@
 .font{
 	font-size: 10px;
 }
+
 table{
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -45,6 +51,7 @@ td, th {
 th{
 	background-color: #DCDCDC;
 }
+
 #about{
 	display: flex;
 	flex-wrap: wrap;
@@ -62,7 +69,7 @@ th{
 	text-align: center;
 	font-size: 30px;
 }
-
+/*mobile view*/
 @media screen and (min-width: 320px) and (max-width: 480px){
 #main{
 	display: inline-flex;
@@ -92,11 +99,16 @@ th{
 #profile,img{
 	height: 100%;
 	width: 250%;
+	border-radius: 20%;
+}
+#profile>img{
+	box-shadow: 3px 3px 3px 3px black;	
 }
 .headings{
 	font-size: 20px;
 }
 }
+/*tab view*/
 @media screen and (min-width: 481px) and (max-width: 768px){
 .sec{
 	display: inline-flex;
@@ -120,6 +132,7 @@ th{
 	margin-left: 40%;
 	margin-top: 20%;
 	border-radius: 20%;
+	box-shadow: 3px 3px 3px 3px black;
 }
 #mainsection{
 	border-top: ridge;
