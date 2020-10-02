@@ -1,3 +1,6 @@
+body{
+	background-image: linear-gradient(white,skyblue);
+}
 .child1{
 	border:2px solid #ddd;
 	padding: 1%;
@@ -6,6 +9,7 @@
 	font-size: 22px;
 	text-align: center;
 	border-radius: 10%;
+	word-wrap: break-word;
 }
 .child2{
 	border:2px solid #ddd;
@@ -32,6 +36,13 @@ img{
 	margin-right: auto;
 	box-shadow: 3px 4px 5px red;
 }
+.tablestyle{
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+
 
 /*mobile view*/
 @media screen and (min-width: 320px) and (max-width: 480px){
@@ -42,8 +53,7 @@ img{
 	width: 94%;
 	font-size: 22px;
 	text-align: center;
-	border-radius: 10%;
-	background-color: pink;
+	border-radius: 0%;
 }
 .child2{
 	border:2px solid #ddd;
@@ -51,8 +61,8 @@ img{
 	margin: 1%;
 	width: 94%;
 	font-size: 22px;
-	border-radius: 10%;
-	background-color: pink;
+	border-radius: 0%;
+	word-wrap: break-word;
 }
 .parent{
 	display: flex;
@@ -72,11 +82,12 @@ img{
 	box-shadow: 3px 4px 5px red;
 }
 .tablestyle{
-	/*overflow-x: auto;
 	border-collapse: collapse;
-	border-spacing: 0;*/
+	border-spacing: 0;
 	font-size: 19px;
+	width: 94%;
 }
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px){
@@ -88,14 +99,16 @@ img{
 	font-size: 22px;
 	text-align: center;
 	border-radius: 10%;
+	word-wrap: break-word;
 }
 .child2{
 	border:2px solid #ddd;
 	padding: 1%;
 	margin: 1%;
-	width: 40%;
+	width: 60%;
 	font-size: 22px;
 	border-radius: 10%;
+	word-wrap: break-word;
 }
 .parent{
 	display: flex;
@@ -117,8 +130,11 @@ img{
 .tablestyle{
 	overflow-x:auto;
 	border-collapse: collapse;
-	/*font-size: 19px;*/
+}
+.tablestyle,td, th {
+  padding: 0px;
 }
 }
 
 /*over-flow x auto create a class name to the table*/
+
